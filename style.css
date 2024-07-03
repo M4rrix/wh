@@ -67,16 +67,24 @@ img {
 }
 
 .section2 {
-    background-image: url(img/M5-Desafio3-img.png);
-   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-image: url("img/M5-Desafio3-img.png");
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+    background-position: 75% 10%; */
+}
+.section2 > *{
+    flex: 1 0 min(100%, 320px);
+}
+.people{
+    width: 100%;
+    max-width: 640px;
 }
 
 .div-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 500px;
-    margin-left: 5%;
+    max-width: 500px;
 }
 
 .title2 {
@@ -89,3 +97,9 @@ img {
     font-family: "Roboto", sans-serif;
 }
 
+.foto-wh{
+    width: 100%;
+    max-height: 420px;
+    background-color: hsl(220, 60%, 55%);
+    object-fit: contain;
+}
